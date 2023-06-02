@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* MENÚ - INDEX.HTML */
+
+.open-menu,
+.close-menu{
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #0a151e;
+}
+
+.logo{
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #000509;
+    font-family: 'Playfair Display', serif;
+}
+
+/* BANNER - INDEX.HTML*/
+.banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    background-image: url(/img/auto-portada.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.contenedor1 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    color: #213443;
+    align-items: center;
+    margin: auto;
+}
+
+.contenedor1 h3 {
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 0.10rem;
+    font-size: 16px;
+}
+
+
+/* SECCIONES POPULARES */
+#populares{
+    height: 350%;
+    background-color: #1a3141;
+    padding-bottom: 7%;
+}
+
+#populares h1{
+    text-align: center;
+    padding: 6% 0;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contenedor-padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150%;
+}
+
+.contenedor-hijo{
+    height: 25%;
+    width: 25%;
+    background-color: #09141c;
+}
+
+.contenedor-hijo img{
+    width: 100%;
+    height: 80%;
+}
+
+.contenedor-hijo img:hover{
+    -webkit-transform: scale(1.1); transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+.contenedor-hijo h3{
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+}
+
+/* FOOTER - INDEX.HTML*/
+
+.footer-div1 {
+    height: 50px;
+    background-color: #0f1d27;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    padding: 0 20px;
+    size: 13px;
+    color: black;
+}
+
+/* en 918 se convierte en la hambuerguesa  */
+@media screen and (max-width: 919px){
+    /* menu  */
+    .open-menu,
+    .close-menu{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .close-menu{
+        margin-bottom: 1rem;
+        margin-left: 6rem;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #152c3f;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visibility{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list a{
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width: 879px){
+    /* banner */
+    .contenedor1 h2 {
+        font-size: 75px;
+    }
+    /* seccion populares*/
+    #populares h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    /* baner*/
+    .contenedor1 {
+        height: 400px;
+        background-attachment:scroll;
+    }
+    .contenedor1 h2 {
+        font-size: 60px;
+    }
+    /* seccion populares*/
+    #populares h1{
+        font-size: 23px;
+    }
+    .contenedor-hijo h3{
+        padding: 1rem 0;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    /* baner*/
+    .contenedor1 {
+        height: 340px;
+    } 
+    .contenedor1 h2 {
+        font-size: 50px;
+    }
+    /* seccion populares*/
+    #populares h1{
+        font-size: 22px;
+    }
+    .contenedor-hijo h3{
+        padding: 1rem 0;
+        font-size: 13px;
+    }
+}

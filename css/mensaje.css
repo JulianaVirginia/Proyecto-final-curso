@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a3141;
+}
+
+h1{
+    text-align: center;
+    margin-top: 240px;
+    font-size: 30px;
+    
+}
+p{
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body a{
+    color: #041724;
+}
+
+@media screen and (max-width: 640px){
+    h1{
+        font-size: 26px;
+        
+    }
+    p{
+        font-size: 17px;
+    }
+    
+}

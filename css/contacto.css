@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* MENÚ - Contacto */
+
+.open-menu,
+.close-menu{
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #0a151e;
+}
+
+.logo{
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #000509;
+    font-family: 'Playfair Display', serif;
+}
+
+/* fin de menu  */
+
+.seccion-contacto{
+    background-color: #1a3141;
+    height: 900px;
+    padding-bottom: 10%;
+}
+
+#titulo-contacto{
+    text-align: center;
+    padding: 120px 0;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+#contactanos-div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f2231;
+    width: 50%;
+    height: 70%;
+}
+
+#contactanos-div-hijo{
+    padding-top: 10%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+    height: 90%;
+}
+
+.seccion-contacto form label{
+    font-family: 'Work Sans', sans-serif;
+    padding: 12px 0;
+    font-size: 17px;
+}
+
+
+.seccion-contacto form textarea{
+    height: 110px;
+}
+
+.seccion-contacto form input , textarea{
+    padding-left: 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#boton{
+    display: block;
+    margin: 19% auto;
+    width: 27%;
+    height: 20%;
+    font-family: 'Work Sans', sans-serif;
+    align-items: center;
+    background-color: #1b3f58;
+    border: none;
+    cursor: pointer;
+}
+
+#boton:hover{
+    background-color: #194362;
+    transition: all .3s ease-in-out;
+    -webkit-transform: scale(1.1); transform: scale(1.1);
+}
+
+/* FOOTER - Sobre nosotros*/
+
+.footer-div1 {
+    height: 50px;
+    background-color: #0f1d27;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    padding: 0 20px;
+    size: 13px;
+    color: black;
+}
+
+/* RESPONSIVE*/
+@media screen and (max-width: 1100px){
+    
+#contactanos-div{
+    width: 50%;
+    height: 69%;
+}
+
+#contactanos-div-hijo{
+    width: 80%;
+    height: 94% ;
+}
+
+}
+
+/* en 918 se convierte en la hambuerguesa  */
+@media screen and (max-width: 919px){
+    /* menu  */
+    .open-menu,
+    .close-menu{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .close-menu{
+        margin-bottom: 1rem;
+        margin-left: 6rem;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #152c3f;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visibility{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list a{
+        margin: 4rem;
+    }
+
+    /* formulario contacto*/
+    #contactanos-div{
+        width: 60%;
+        height: 69%;
+    }
+
+    /* titulo */
+    #titulo-contacto{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 705px){
+    /* formulario  */
+    #contactanos-div{
+        width: 60%;
+        height: 63%;
+    }
+     /* titulo */
+    #titulo-contacto{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px){
+     /* titulo */
+    #titulo-contacto{
+        font-size: 21px;
+    }
+    /* formulario  */
+    #contactanos-div{
+        width: 67%;
+        height: 63%;
+    }
+}
+
+@media screen and (max-width: 537px){
+    /* formulario  */
+    #contactanos-div{
+        width: 79%;
+        height: 63%;
+    }
+
+}
