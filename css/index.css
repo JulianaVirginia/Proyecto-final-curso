@@ -17,7 +17,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #0a151e;
+    background-color: #112f47;
 }
 
 .logo{
@@ -76,14 +76,14 @@ header{
 
 /* SECCIONES POPULARES */
 #populares{
-    height: 350%;
+    height: 450%;
     background-color: #1a3141;
-    padding-bottom: 7%;
+    padding-bottom: 15%;
 }
 
 #populares h1{
     text-align: center;
-    padding: 6% 0;
+    padding: 9% 0;
     font-size: 30px;
     font-family: 'Playfair Display', serif;
 }
@@ -202,8 +202,14 @@ i {
         font-size: 60px;
     }
     /* seccion populares*/
+    #populares{
+        height: 500%;
+        background-color: #1a3141;
+        padding-bottom: 20%;
+    }
     #populares h1{
         font-size: 23px;
+        padding: 15% 0;
     }
     .contenedor-hijo h3{
         padding: 1rem 0;
@@ -222,6 +228,21 @@ i {
     /* seccion populares*/
     #populares h1{
         font-size: 22px;
+        padding: 15% 0;
+    }
+    .contenedor-padre{
+        flex-direction: column;
+        align-items: center;
+        height: 200%;
+    }
+    .contenedor-hijo{
+        height: 42%;
+        width: 42%;
+        margin: 2rem 0;
+    }
+    .contenedor-hijo img{
+        width: 100%;
+        height: 80%;
     }
     .contenedor-hijo h3{
         padding: 1rem 0;
